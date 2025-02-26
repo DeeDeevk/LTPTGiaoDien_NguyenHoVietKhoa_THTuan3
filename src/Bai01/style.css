@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+}
+.container_full{
+    width: 100%;
+}
+
+.top{
+    width: 1880px;
+    background-color: white;
+    min-height: 60px;
+    border-bottom: grey solid;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container > div{
+    width: 100px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 5px;
+}
+
+.timKiem{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: grey solid;
+}
+
+.menu{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.menu > div{
+    margin-right: 0px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 20px;
+    color: grey;
+}
+
+.yrb{
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 10px;
+    border: hidden;
+    background-color: #feeff5;
+    color: #ed8eb0;
+    font-size: 20px;
+}
+
+.avt{
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
+    margin-left: 200px;
+    border-radius: 100px;
+}
+
+.content{
+    min-height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.benTrai{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 20%;
+    background-color: white;
+    height: 700px;
+    border: grey solid;
+}
+
+.filter > h2{
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.benPhai{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 60%;
+    background-color: white;
+    height: 700px;
+
+}
+
+.benPhai > h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sorry{
+    margin-left: 125px;
+
+}
+
+.benPhai > p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: grey;
+}
+
+.benPhai > center > button{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    border: hidden;
+}
+
+.sc{
+    background-color: #fceff4;
+    color: #eca9c3;
+}
+
+.bc{
+    background-color: #f4f0fe;
+    color: #b39cde;
+}
+
+.pv{
+    background-color: #fbeef3;
+    color: #ec9bba;
+}
+
+.hf{
+    background-color: #eefcff;
+    color: #9ab8c3;
+}
+
+
+footer{
+    border-top: grey solid;
+    background-color: black;
+    min-height: 200px;
+}
