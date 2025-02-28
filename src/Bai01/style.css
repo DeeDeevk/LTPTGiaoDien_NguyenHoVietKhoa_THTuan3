@@ -9,7 +9,7 @@ body{
     width: 1880px;
     background-color: white;
     min-height: 60px;
-    border-bottom: grey solid;
+    border-bottom: #f3f3f3 solid;
 }
 
 .container{
@@ -19,7 +19,6 @@ body{
 
 .container > div{
     width: 100px;
-    margin-right: 100px;
     text-align: center;
     line-height: 60px;
     font-size: 30px;
@@ -27,36 +26,43 @@ body{
 
 .logo{
     width: 150px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .timKiem{
-    width: 250px;
-    height: 30px;
+    margin-left: 100px;
+    width: 500px;
+    height: 40px;
     border-radius: 10px;
     margin-top: 10px;
-    border: grey solid;
+    border: hidden;
+    background-color: #f3f3f3;
+    text-indent: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 .menu{
+    margin-left: 600px;
     margin-top: 30px;
     display: flex;
     gap: 20px;
 }
-.menu > div{
+.menu > a{
     margin-right: 0px;
-    margin-left: 80px;
+    margin-left: 20px;
     text-align: center;
     line-height: 15px;
     font-size: 20px;
     color: grey;
+    text-decoration: none;
 }
 
 .yrb{
     width: 250px;
     height: 50px;
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 70px;
     border-radius: 10px;
     border: hidden;
     background-color: #feeff5;
@@ -68,7 +74,7 @@ body{
     margin-top: 5px;
     height: 60px;
     width: 60px;
-    margin-left: 200px;
+    margin-left: 270px;
     border-radius: 100px;
 }
 
@@ -84,17 +90,156 @@ body{
     width: 20%;
     background-color: white;
     height: 700px;
-    border: grey solid;
+    border: #f3f3f3 solid;
+    border-radius: 10px;
+}
+
+.filter{
+    border-bottom: #f3f3f3 solid;
 }
 
 .filter > h2{
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.filter > h3{
     font-family: sans-serif;
     margin-left: 10px;
     margin-top: 10px;
 }
 
+.chk1{
+    accent-color: #f44b86;
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+.chk2{
+    margin-left: 35px;
+    accent-color: #f44b86;
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+.danhSachTrai{
+    display: flex;
+}
+
+.danhSachTrai ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.danhSachTrai li{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.time{
+    height: 100px;
+    border-bottom: #f3f3f3 solid;
+}
+
+.time > h3{
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.range-container{
+    position: relative;
+    width: 250px;
+    margin: 50px auto;
+}
+
+.slider-track{
+    border-radius: 20px;
+    position: absolute;
+    height: 5px;
+    background:  #ffb3c8;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.time input{
+    position: absolute;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 2;
+}
+
+.time input::-webkit-slider-runnable-track{
+    background: transparent;
+    height: 5px;
+}
+
+.time input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid pink;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    position: relative;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+
+.rating > h3{
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.rating{
+    border-bottom: solid #f3f3f3;
+}
+
+.danhSachRating ul{
+    list-style: none;
+    padding: 0;
+}
+
+.danhSachRating li{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    color: yellow;
+}
+
+.chk3{
+    margin-left: 35px;
+    accent-color: #f44b86;
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+.nutApply{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    border: solid #f3f3f3;
+    background-color: #f44b86;
+    color: white;
+    padding: 5px;
+}
+
 .benPhai{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 100px;
     width: 60%;
     background-color: white;
@@ -102,21 +247,22 @@ body{
 
 }
 
-.benPhai > h1 {
+.benPhai > h2 {
     margin-top: 50px;
     text-align: center;
     font-family: sans-serif;
 }
 
 .sorry{
-    margin-left: 125px;
+    margin-left: 120px;
+    width: 75%;
 
 }
 
 .benPhai > p {
     text-align: center;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
 }
 
@@ -124,11 +270,13 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 50px;
-    font-size: 20px;
-    height: 40px;
-    width: 150px;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
     border: hidden;
 }
+
+
 
 .sc{
     background-color: #fceff4;
@@ -150,9 +298,129 @@ body{
     color: #9ab8c3;
 }
 
-
 footer{
-    border-top: grey solid;
-    background-color: black;
-    min-height: 200px;
+    border-radius: 10px;
+    background-color: #1d2228;
+    min-height: 400px;
+}
+
+.chuaHet{
+    display: flex;
+}
+
+.fTrai{
+    width: 50%;
+    min-height: 400px;
+}
+
+.fTrai h2{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+.fTrai p{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #bfc2c9;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+.fTrai input{
+    margin-left: 30px;
+    font-family: sans-serif;
+    width: 65%;
+    height: 40px;
+    font-size: 14px;
+    padding: auto;
+    border-radius: 5px;
+    text-indent: 10px;
+    border: hidden;
+}
+
+.fTrai input::placeholder{
+    color: #d6d7d9;
+}
+
+.fTrai button{
+    margin-left: 20px;
+    min-height: 45px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #ef4983;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    border: hidden;
+}
+
+.fTraiPhiaDuoi{
+    display: flex;
+    margin-top: 200px;
+    min-height: 100px;
+    margin-left: 30px;
+}
+
+.thongTinTrai{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: #bfc2c9;
+    font-family: sans-serif;
+}
+
+.fGiua{
+    width: 25%;
+    min-height: 400px;
+}
+
+.fGiua h2{
+    margin-left: 200px;
+    margin-top: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.fGiua ul{
+    list-style: none;
+    margin-left: 160px;
+
+}
+
+.fGiua li{
+    color: #bfc2c9;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.giuaDuoi{
+    margin-top: 190px;
+}
+
+.fPhai{
+    width: 25%;
+    min-height: 400px;
+}
+
+
+.fPhai h2{
+    margin-left: 150px;
+    margin-top: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.fPhai ul{
+    list-style: none;
+    margin-left: 110px;
+
+}
+
+.fPhai li{
+    color: #bfc2c9;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
 }

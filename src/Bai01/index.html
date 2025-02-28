@@ -15,21 +15,21 @@
                 </div>
                 <div><input type="text" placeholder="Search" class="timKiem"></div>
                 <navbar class="menu">
-                    <div>
+                    <a href="">
                         What to cook
-                    </div>
-                    <div>
+                    </a>
+                    <a href="">
                         Recipes
-                    </div>
-                    <div>
+                    </a>
+                    <a href="">
                         Ingredients
-                    </div>
-                    <div>
+                    </a>
+                    <a href="">
                         Occations
-                    </div>
-                    <div>
+                    </a>
+                    <a href="">
                         About Us
-                    </div>
+                    </a>
                 </navbar>
                 <div>
                     <button class="yrb">You Recipe Box</button>
@@ -44,13 +44,50 @@
         <div class="container_full">
             <div class="content">
                 <div class="benTrai">
-                    <div class="filter"><h2>FILTERS</h2></div>
-                    <div class="time"></div>
-                    <div class="rating"></div>
-                    <div class="apply"></div>
+                    <div class="filter">
+                        <h2>FILTERS</h2>
+                        <h3>Type</h3>
+                        <div class="danhSachTrai">
+                            <ul>
+                                <li><input class="chk1" type="checkbox" value="Pan-fried">Pan-fried</li>
+                                <li><input class="chk1" type="checkbox" value="Grilled">Grilled</li>
+                                <li><input class="chk1" type="checkbox" value="Sauteed">Sauteed</li>
+                                <li><input class="chk1" type="checkbox" value="Steamed">Steamed</li>
+                            </ul>
+                            <ul>
+                                <li><input class="chk2" type="checkbox" value="Stir-fired">Stir-fired</li>
+                                <li><input class="chk2" type="checkbox" value="Roasted">Roasted</li>
+                                <li><input class="chk2" type="checkbox" value="Baked">Baked</li>
+                                <li><input class="chk2" type="checkbox" value="Stewed">Stewed</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h3>Time</h3>
+                        <div class="range-container">
+                            <div class="slider-track"></div>
+                            <input type="range">
+                            <input type="range">
+                        </div>                                                        
+                    </div>
+                    <div class="rating">
+                        <h3>Rating</h3>
+                        <div class="danhSachRating">
+                            <ul>
+                                <li><input class="chk3" type="checkbox" group="danhGia" value="5 sao">★★★★★</li>
+                                <li><input class="chk3" type="checkbox" group="danhGia" value="4 sao">★★★★☆</li>
+                                <li><input class="chk3" type="checkbox" group="danhGia" value="3 sao">★★★☆☆</li>
+                                <li><input class="chk3" type="checkbox" group="danhGia" value="2 sao">★★☆☆☆</li>
+                                <li><input class="chk3" type="checkbox" group="danhGia" value="1 sao">★☆☆☆☆</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="apply">
+                        <button class="nutApply">Apply</button>
+                    </div>
                 </div>
                 <div class="benPhai">
-                    <h1>Sorry, no results were found for "cakescascasa"</h1>
+                    <h2>Sorry, no results were found for "cakescascasa"</h2>
                     <img src="../Bai01/img/sorry.jpg" alt="Sorry" class="sorry">
                     <p>We have all your Independence Day sweets covered.</p>
                     <center>
@@ -64,7 +101,50 @@
         </div>
     </main>
     <footer>
-
+        <div class="chuaHet">
+            <div class="fTrai">
+                <h2>About us</h2>
+                <p>Welcome to our website, a wonderful place to explore and learn how to cook like a pro.</p>
+                <input type="text" placeholder="Enter your email">
+                <button value="Send">Send</button>
+                <div class="fTraiPhiaDuoi">
+                    <img src="../Bai01/img/logoMauKhac.jpg" alt="logo mau khac">
+                    <div class="thongTinTrai">2023 Chefify company</div>
+                    <div class="thongTinTrai">Term of Service| Privacy policy</div>
+                </div>
+            </div>
+            <div class="fGiua">
+                <div class="giuaTren">
+                    <h2>Learn More</h2>
+                    <ul>
+                        <li>Our Cook</li>
+                        <li>See Our Features</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="giuaDuoi">
+                    <h2>Shop</h2>
+                    <ul>
+                        <li>Gift Subscription</li>
+                        <li>Send Us Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fPhai">
+                <div class="giuaTren">
+                    <h2>Recipes</h2>
+                    <ul>
+                        <li>What to Cook This Week</li>
+                        <li>Pasta</li>
+                        <li>Dinner</li>
+                        <li>Healthy</li>
+                        <li>Vegetarian</li>
+                        <li>Vegan</li>
+                        <li>Chrismas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
