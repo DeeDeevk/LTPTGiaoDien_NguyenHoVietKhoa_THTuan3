@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    margin: auto;
+    margin-left: 500px;
+    margin-top: -300px;
+}
+
+.container label{
+    font-family: sans-serif;
+    font-size: 30px;
+    
+}
+
+.container input{
+    font-family: sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+#iv{
+    margin-left: 10px;
+}
+#ir{
+    margin-left: 194px;
+}
+#ig{
+    margin-left: 125px;
+}
+
+tr {
+    border: solid white;
+}
